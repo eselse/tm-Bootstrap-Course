@@ -9,6 +9,17 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        img {
+            max-width: 200px;
+            max-height: auto;
+        }
+        .jumbotron{
+            background: url(img/img1.jpg) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,6 +30,73 @@
 </head>
 
 <body>
+
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Bootstrap CheatSheet</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Link
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron text-center">
+            <h1>Hello, world!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam dolores, at ipsum placeat unde in nemo eligendi debitis dicta laboriosam. Recusandae, quisquam. Quasi totam commodi, natus nesciunt ut molestias alias!</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+    </div>
+
     <div class="container">
 
         <!-- Typography -->
@@ -41,15 +119,431 @@
             officia iure rem animi. Minima ad qui ab commodi.</p>
         <hr>
 
-        <!-- Alignment -->
-        <p class="text-left">Left aligned text.</p>
-        <p class="text-center">Center aligned text.</p>
-        <p class="text-right">Right aligned text.</p>
-        <p class="">Justified text.</p>
-        <p class="">No wrap text.</p>
-        
+        <!-- Alignment & Transformation-->
+        <p class="text-left text-lowercase">Left aligned text.</p>
+        <p class="text-center text-uppercase">Center aligned text.</p>
+        <p class="text-right text-capitalize">Right aligned text.</p>
+        <p class="text-justify">Justified text.</p>
+        <p class="text-nowrap">No wrap text.</p>
+
+        <!-- Quick Floats -->
+        <div class="pull-right">Div floated to right</div>
+        <div class="pull-left">Div floated to left</div>
+
+        <!-- Clear Floats -->
+        <div class="clearfix">Clearfix Div</div>
+
+        <hr>
+
+        <!-- Blocquote -->
+        <blockquote class="blockquote-reverse">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta optio eligendi facere quam officiis harum aperiam
+                quibusdam animi quas enim?</p>
+            <footer>Quote by
+                <cite title="John Doe">John Doe</cite>
+            </footer>
+        </blockquote>
+
+        <hr>
+
+        <!-- Lists -->
+        <ul class="list-inline">
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+            <li>List item four</li>
+        </ul>
+
+
+        <ul class="list-unstyled">
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+            <li>List item four</li>
+        </ul>
+
+        <hr>
+
+        <!-- Code -->
+        <code>&lt;h1&gt;Heading text&lt;/h1&gt;</code>
+        <br> Change directory with
+        <kbd>cd</kbd>
+        <br> To edit settings, press
+        <kbd>
+            <kbd>ctrl</kbd> +
+            <kbd>,</kbd>
+        </kbd>
+
+        <hr>
+
+        <!-- Contextual Colors -->
+        <p class="text-primary">Hello World</p>
+        <p class="text-success">Hello World</p>
+        <p class="text-info">Hello World</p>
+        <p class="text-warning">Hello World</p>
+        <p class="text-danger">Hello World</p>
+        <p class="text-muted">Hello World</p>
+
+        <hr>
+
+        <!-- Contextual Background Colors -->
+        <p class="bg-primary">Hello World</p>
+        <p class="bg-success">Hello World</p>
+        <p class="bg-info">Hello World</p>
+        <p class="bg-warning">Hello World</p>
+        <p class="bg-danger">Hello World</p>
+        <p class="bg-muted">Hello World</p>
+
     </div>
 
+    <hr>
+
+    <div class="container">
+        <!-- Buttons -->
+        <button class="btn btn-default">Default</button>
+        <a href="#" class="btn btn-default" role="button">Link</a>
+        <input type="submit" class="btn btn-default" value="Submit">
+
+        <hr>
+
+        <!-- Contextual Buttons -->
+        <button class="btn btn-default">Default</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-link">Link</button>
+
+        <hr>
+
+        <!-- Button sizes -->
+        <button class="btn btn-default btn-lg">Default</button>
+        <button class="btn btn-default">Default</button>
+        <button class="btn btn-primary btn-sm">Default</button>
+        <button class="btn btn-default btn-xs" disabled="disabled">Default</button>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- Forms -->
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Add name...">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Your email...">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" placeholder="Your message..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload File</label>
+                <input type="file" id="file">
+                <p class="help-block">Only png and jpg allowed</p>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Check me out
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+        <hr>
+
+        <!-- Inline Form -->
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Your email...">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Log in</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- Tables -->
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <tr>
+                <th>Firstname</th>
+                <th>Lasttname</th>
+                <th>Age</th>
+            </tr>
+            <tr class="danger">
+                <td>Jill</td>
+                <td>Doe</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Doe</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>34</td>
+            </tr>
+            <tr class="success">
+                <td>Stephanie</td>
+                <td>Smith</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>Smith</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- List Group -->
+        <ul class="list-group">
+            <li class="list-group-item">Item One</li>
+            <li class="list-group-item">Item Two</li>
+            <li class="list-group-item">Item Three</li>
+            <li class="list-group-item">Item Four</li>
+        </ul>
+
+
+        <div class="list-group">
+            <a href="#" class="list-group-item active">Item One</a>
+            <a href="#" class="list-group-item">Item Two</a>
+            <a href="#" class="list-group-item list-group-item-success">Item Three</a>
+            <a href="#" class="list-group-item disabled">Item Four</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Panels -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel Title</h3>
+            </div>
+            <div class="panel-body">
+                Panel Content
+            </div>
+            <div class="panel-footer">
+                Panel footer
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Wells -->
+        <div class="well">Hello World</div>
+        <div class="well well-lg">Hello World</div>
+        <div class="well well-sm">Hello World</div>
+
+        <hr>
+
+        <!-- Alerts -->
+        <div class="alert alert-success" role="alert">Success alert</div>
+        <div class="alert alert-info" role="alert">Info alert</div>
+        <div class="alert alert-warning" role="alert">Warning alert</div>
+        <div class="alert alert-danger" role="alert">Danger alert</div>
+
+        <div class="alert alert-warning alert-dissmissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert">
+                <span>&times;</span>
+            </button>You can close this alert
+        </div>
+
+        <hr>
+
+        <!-- Progress bars -->
+        <div class="progress">
+            <div class="progress-bar" style="width: 50%;">
+                50%
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 75%;">
+                75%
+            </div>
+        </div>
+
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 25%;">
+                25%
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" style="width: 95%;">
+                95%
+            </div>
+        </div>
+
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 15%;">
+                15%
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- Labels -->
+        <h1>Hello
+            <span class="label label-primary">Primary</span>
+        </h1>
+        <h2>Hello
+            <span class="label label-success">Success</span>
+        </h2>
+        <h3>Hello
+            <span class="label label-info">info</span>
+        </h3>
+        <h4>Hello
+            <span class="label label-warning">Warning</span>
+        </h4>
+        <h5>Hello
+            <span class="label label-danger">Danger</span>
+        </h5>
+        <h6>Hello
+            <span class="label label-default">Default</span>
+        </h6>
+
+        <!-- Badges -->
+        <a href="#">Inbox
+            <span class="badge">50</span>
+        </a>
+
+        <button class="btn btn-primary" type="button">
+            Messages
+            <span class="badge">2</span>
+        </button>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- Images -->
+        <img src="img/img1.jpg" alt="image" class="thumbnail">
+        <br>
+        <img src="img/img2.jpg" alt="image" class="img-rounded">
+        <br>
+        <img src="img/img3.jpg" alt="image" class="img-circle">
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- Grids -->
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam impedit expedita at veritatis voluptates
+                aut facere. Consequuntur voluptatum ab a, eligendi praesentium culpa voluptatem quis accusantium nemo quibusdam
+                debitis?
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa nihil voluptates, vero sapiente consequuntur
+                maxime tempore. Numquam exercitationem, porro blanditiis impedit, error, fugiat eos at nostrum quia delectus
+                reiciendis?
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas veniam repellat, aut voluptatum id rerum facilis
+                sed voluptates facere architecto quae nostrum sit odit, tempore adipisci dicta iure aliquam rem.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas veniam repellat, aut voluptatum id rerum facilis
+                sed voluptates facere architecto quae nostrum sit odit, tempore adipisci dicta iure aliquam rem.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas veniam repellat, aut voluptatum id rerum facilis
+                sed voluptates facere architecto quae nostrum sit odit, tempore adipisci dicta iure aliquam rem.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas veniam repellat, aut voluptatum id rerum facilis
+                sed voluptates facere architecto quae nostrum sit odit, tempore adipisci dicta iure aliquam rem.</div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas veniam repellat, aut voluptatum id rerum facilis
+                sed voluptates facere architecto quae nostrum sit odit, tempore adipisci dicta iure aliquam rem.</div>
+            <div class="col-md-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas veniam repellat, aut voluptatum id rerum facilis
+                sed voluptates facere architecto quae nostrum sit odit, tempore adipisci dicta iure aliquam rem.</div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas veniam repellat, aut voluptatum id rerum facilis
+                sed voluptates facere architecto quae nostrum sit odit, tempore adipisci dicta iure aliquam rem.</div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Box</h3>
+            </div>
+        </div>
+
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
